@@ -22,7 +22,7 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe('string');
     });
     it('should return "Hello, Jane!" when executed', function() {
-        expect(sayHello()).toBe("Hello, Jane!");
+        expect(sayHello("Jane")).toBe("Hello, Jane!");
     });
     it('should return "Hello, Alex!" when executed', function() {
        expect(sayHello("Alex")).toBe("Hello, Alex!");
@@ -30,5 +30,6 @@ describe('sayHello', function() {
     it('should return "Hello, Pat!" when executed', function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+
 });
 
