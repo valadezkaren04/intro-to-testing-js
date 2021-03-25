@@ -36,5 +36,9 @@ describe('sayHello', function() {
     it('should return "Hello, World!" when executed', function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    //edge cases
+    // it('should return empty str when executed', function () {
+    //     expect(sayHello("")).toBe("");
+    // });
 });
 
