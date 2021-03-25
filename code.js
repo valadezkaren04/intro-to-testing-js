@@ -14,5 +14,12 @@ function helloWorld() {
 //     }
 // }
 function sayHello(input) {
-    return "Hello, " + input + "!";
+    if (input === true) {
+        return "Hello, World!";
+    }
+    if (input === false) {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
