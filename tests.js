@@ -50,6 +50,9 @@ describe('isFive', function() {
         expect(typeof isFive()).toBe('boolean');
     });
     it('should return boolean true when passed the argument of 5', function() {
-        expect(typeof isFive(true)).toBe(5);
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return boolean true when argument "5" is passed', function () {
+        expect(typeof sayHello()).toBe('string');
     });
 });
