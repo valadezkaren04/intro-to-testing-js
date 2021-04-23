@@ -91,11 +91,62 @@ describe('isEven', function() {
 });
 
 describe('isVowel', function() {
-    // it('should be a defined function', function() {
-    //     expect(typeof isVowel).toBe("function");
-    // });
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe("function");
+    });
     it('should return a boolean no matter the input', function() {
         expect(typeof isVowel()).toBe('boolean');
     });
+    it('should return true when passed with the argument of "a" ', function() {
+        expect(isEven("a")).toBe(true);
+    });
+    it('should return true when passed with the argument of "A" ', function() {
+        expect(isEven("A")).toBe(true);
+    });
+    it('should return false when called with the argument of "y" ', function() {
+        expect(isVowel('y')).toBe(false);
+    });
+    it('should return false when called with the argument of 4 ', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false when called with the argument of true', function() {
+        expect(isVowel(true)).toBe(false);
+    });
+    it('should return false when called with the argument of false', function() {
+        expect(isVowel(false)).toBe(false);
+    });
+    it('should return false when called with the argument of "banana" ', function() {
+        expect(isVowel()).toBe(false);
+    });
+    it('should return false when called without an argument', function() {
+        expect(isEven()).toBe(false);
+    });
 
+});
+
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe("function");
+    });
+    it('should return 5 when arguments 2 and 3 are called', function() {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should return -12 when arguments -3 and -9 are called', function() {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should return 11 when arguments "5" and 6 are called', function() {
+        expect(add("5",6)).toBe(11);
+    });
+    it('should return 6 when arguments "-4" and "10" are called', function() {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('should return NaN when arguments "banana" and "split" are called', function() {
+        expect(isNaN(add("banana","split"))).toBe(NaN);
+    });
+    it('should return NaN when arguments 2 and "apples" are called', function() {
+        expect(isNaN(add(2,"apples"))).toBe(NaN);
+    });
+    it('should return NaN when without an argument', function() {
+        expect(add()).toBe(NaN);
+    });
 });

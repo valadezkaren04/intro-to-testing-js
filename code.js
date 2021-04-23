@@ -32,7 +32,16 @@ function isEven(input) {
 
 }
 
-function isVowel (input) {
-    return (input === "boolean");
+// function isVowel(vowel) {
+//     if (typeof vowel === "number") {
+//         return false;
+//     } else if (vowel === "a" || vowel === "A" || vowel === 'boolean') {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
+function add(input1, input2) {
+    return parseInt(input1) + parseInt(input2);
 }
