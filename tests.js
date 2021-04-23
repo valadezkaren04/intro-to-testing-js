@@ -56,3 +56,46 @@ describe('isFive', function() {
         expect(typeof sayHello()).toBe('string');
     });
 });
+
+describe('isEven', function() {
+    it('should be a defined function', function() {
+        expect(typeof isEven).toBe("function");
+    });
+    it('should return a boolean no matter the input', function() {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when executed with the argument of 2', function() {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when executed with the argument of -4', function() {
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when executed with the argument of 3', function() {
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when called with the argument of "banana" ', function() {
+        expect(isEven("banana")).toBe(false);
+    });
+    it('should return true when called with the argument of "8" ', function() {
+        expect(isEven("8")).toBe(true);
+    });
+    it('should return false when called with the argument of Infinity', function() {
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should return false when called with boolean', function() {
+        expect(isEven('boolean')).toBe(false);
+    });
+    it('should return false when called without an argument', function() {
+        expect(isEven()).toBe(false);
+    });
+});
+
+describe('isVowel', function() {
+    // it('should be a defined function', function() {
+    //     expect(typeof isVowel).toBe("function");
+    // });
+    it('should return a boolean no matter the input', function() {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+
+});
