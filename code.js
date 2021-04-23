@@ -32,16 +32,15 @@ function isEven(input) {
 
 }
 
-// function isVowel(vowel) {
-//     if (typeof vowel === "number") {
-//         return false;
-//     } else if (vowel === "a" || vowel === "A" || vowel === 'boolean') {
-//         return true;
-//     } else {
-//         return false;
-//     }
-// }
+function isVowel(input) {
+    if (typeof input === "string") {
+        return input.toLowerCase() === "a" || input.toLowerCase() === "e" || input.toLowerCase() === "i" || input.toLowerCase() === "o" || input.toLowerCase() === "u";
+    } else {
+        return false;
+    }
+}
 
-function add(input1, input2) {
-    return parseInt(input1) + parseInt(input2);
+
+function add(num1, num2) {
+    return parseFloat(num1) + parseFloat(num2);
 }
